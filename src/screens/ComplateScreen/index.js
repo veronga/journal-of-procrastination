@@ -21,6 +21,21 @@ LocaleConfig.locales['ru'] = {
     'Ноябрь',
     'Декабрь'
   ],
+  monthNamesShort: [
+    'Janv.',
+    'Févr.',
+    'Mars',
+    'Avril',
+    'Mai',
+    'Juin',
+    'Juil.',
+    'Août',
+    'Sept.',
+    'Oct.',
+    'Nov.',
+    'Déc.'
+  ],
+  dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
   dayNamesShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 };
 
@@ -29,14 +44,7 @@ LocaleConfig.defaultLocale = 'ru';
 class ComplateScreen extends React.Component {
   constructor(props) {
     super(props);
-    const firstDay = moment().format('YYYY-MM-DD');
-    const lastDay = moment()
-      .add(30, 'days')
-      .format('YYYY-MM-DD');
-
     this.state = {
-      firstDay,
-      lastDay,
       data: {},
       userData: null
     };
@@ -51,7 +59,6 @@ class ComplateScreen extends React.Component {
     this.setState({
       userData: user
     });
-
     firebase
       .database()
       .ref('tasks')
@@ -73,7 +80,7 @@ class ComplateScreen extends React.Component {
   renderItems = item => <CalendarCard item={item} onPressEventCard={this.onPressEventCard} />;
 
   render() {
-    const { data, firstDay, lastDay } = this.state;
+    const { data } = this.state;
     return (
       <Agenda
         theme={{
@@ -94,19 +101,11 @@ class ComplateScreen extends React.Component {
           indicatorColor: '#767C96',
           agendaKnobColor: '#6e5494'
         }}
-        minDate={firstDay}
-        maxDate={lastDay}
         firstDay={1}
         items={data}
         renderEmptyDate={() => <View />}
         renderItem={this.renderItems}
         rowHasChanged={(r1, r2) => r1.id !== r2.id}
-        // rowHasChanged={this.rowHasChanged.bind(this)}
-        // onDayPress={day => {
-        //   this.props.actions.changeActiveDayEvent(day.dateString);
-        //   this.props.actions.changeActiveEventId([]);
-        // }}
-        // markedDates={this.props.markedDates}
       />
     );
   }
