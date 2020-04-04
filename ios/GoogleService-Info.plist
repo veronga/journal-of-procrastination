@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1031889189665-g59m358vfqi8o9ol0d642h0a12ji63cs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1031889189665-g59m358vfqi8o9ol0d642h0a12ji63cs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuLJA6UrhaoxPd_QrZt9piJI_XjDZEw4I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1031889189665</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.invertase.Journalofprocrastination</string>
+	<key>PROJECT_ID</key>
+	<string>journal-of-procrastination</string>
+	<key>STORAGE_BUCKET</key>
+	<string>journal-of-procrastination.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1031889189665:ios:7f3c4ea8c7d39127</string>
+	<key>DATABASE_URL</key>
+	<string>https://journal-of-procrastination.firebaseio.com</string>
+</dict>
+</plist>

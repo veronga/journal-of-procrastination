@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1031889189665",
+    "firebase_url": "https://journal-of-procrastination.firebaseio.com",
+    "project_id": "journal-of-procrastination",
+    "storage_bucket": "journal-of-procrastination.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031889189665:android:e0d1fb9ee00fbe99",
+        "android_client_info": {
+          "package_name": "com.atlonis.journalofprocrastination"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031889189665-tfqbc98iddcjp4jicq8dg3ld07ast71n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPXPuEVlBKyNufDnvwxHXMqHDnWSeofUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031889189665-tfqbc98iddcjp4jicq8dg3ld07ast71n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1031889189665-g59m358vfqi8o9ol0d642h0a12ji63cs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.invertase.Journalofprocrastination"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
