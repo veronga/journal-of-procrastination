@@ -62,8 +62,8 @@ class TaskScreen extends React.Component {
           .ref('tasks')
           .child(uid)
           .push({ title: note, date, icon: category });
-      } catch (e) {
-        console.log('TCL: TaskScreen -> createTask -> e', e);
+      } catch {
+        this.setState({ error: 'Задача не была создана' });
       }
       this.setState({ date: '', category: null, note: '' });
       this.buildNotification(note, date);
@@ -110,7 +110,7 @@ class TaskScreen extends React.Component {
   };
 
   render() {
-    const { isShowPicker, isNotificationEnable, error } = this.state;
+    const { isShowPicker, isNotificationEnable, error, note, date } = this.state;
     return (
       <View style={styles.container}>
         <CustomModal
@@ -121,18 +121,18 @@ class TaskScreen extends React.Component {
         <Input
           icon="md-create"
           placeholder="Что делаем?"
-          value={this.state.note}
+          value={note}
           onChangeText={note => this.setState({ note })}
         />
         <Button
-          title={this.state.date || 'Дата и время'}
+          title={date || 'Дата и время'}
           icon="md-alarm"
           customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
           customTitle={{ color: '#4078c0', paddingLeft: 25 }}
         >
           <DatePicker
             style={styles.containerDataPicker}
-            date={this.state.date}
+            date={date}
             mode="datetime"
             locale="ru-RU"
             placeholder="select date"

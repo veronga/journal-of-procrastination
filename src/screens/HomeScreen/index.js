@@ -7,10 +7,6 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 import styles from './styles';
 
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-
 class HomeScreen extends React.Component {
   constructor() {
     super();
@@ -152,7 +148,6 @@ class HomeScreen extends React.Component {
           />
         )}
         <Text style={{ color: '#bd2c00', textAlign: 'center', paddingTop: 5 }}>{error}</Text>
-
         <View style={containerInput}>
           <TouchableOpacity onPress={this.toggleScreen}>
             <Text style={{ color: '#6e5494' }}>
