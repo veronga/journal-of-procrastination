@@ -27,14 +27,6 @@ class TaskScreen extends React.Component {
 
   componentDidMount() {
     this.readUserTasks();
-    // const connectedRef = firebase.database().ref('.info/connected');
-    // connectedRef.on('value', snap => {
-    //   if (snap.val() === true) {
-    // firebase.database().goOnline();
-    //   } else {
-    //     firebase.database().goOffline();
-    //   }
-    // });
   }
 
   readUserTasks = () => {

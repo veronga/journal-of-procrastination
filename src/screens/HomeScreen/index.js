@@ -18,24 +18,6 @@ class HomeScreen extends React.Component {
     };
   }
 
-  // componentDidMount = () => {
-  //   console.tron.logImportant(firebase.auth().currentUser);
-  //   firebase
-  //     .auth()
-  //     .createUserAndRetrieveDataWithEmailAndPassword('www.atlonis.by@gmail.com')
-  //     .then(data => {
-  //       console.tron.logImportant(data);
-  //       this.setState({
-  //         isAuthenticated: true
-  //       });
-  //     })
-  //     .catch(() => {
-  //       console.tron.logImportant(err);
-  //     });
-
-  //   this.readUserData();
-  // };
-
   onLogin = () => {
     const { emailInput, passwordInput } = this.state;
     if (emailInput === '') {
