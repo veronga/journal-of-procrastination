@@ -20,7 +20,7 @@ Use library:
  How to run
    + copy app
   
-   ![alt text](https://sun9-30.userapi.com/m9o_hpLYUgzqEUO8kvfxZAq1t3T1lGUc_iOzpQ/K_nGAPTaOuE.jpg)
+   ![alt text](https://sun2.velcom-by-minsk.userapi.com/bxgCQuOY9IGzirPBKb0F5v2Xz7k4XhoeGonv1g/JOg-7D6g75U.jpg)
    
    + open downloaded folder
  
