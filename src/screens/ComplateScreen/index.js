@@ -77,7 +77,7 @@ class ComplateScreen extends React.Component {
       });
   };
 
-  renderItems = item => <CalendarCard item={item} onPressEventCard={this.onPressEventCard} />;
+  renderItems = item => <CalendarCard item={item} />;
 
   render() {
     const { data } = this.state;
