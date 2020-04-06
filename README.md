@@ -19,11 +19,11 @@ Use library:
  ***
  How to run
    + copy app
-   ***
+  
    ![alt text](https://sun9-30.userapi.com/m9o_hpLYUgzqEUO8kvfxZAq1t3T1lGUc_iOzpQ/K_nGAPTaOuE.jpg)
    
    + open downloaded folder
-   ***
+ 
    ![alt text](https://sun2.velcom-by-minsk.userapi.com/-IiXZuRQ7XbIPSKzDLP4NWPvleQDBwQKFZJt8w/mELvZOM10Jg.jpg)
   
    + install necessary packages
