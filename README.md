@@ -21,10 +21,10 @@ Use library:
    + copy app
   
    ![alt text](https://sun2.velcom-by-minsk.userapi.com/bxgCQuOY9IGzirPBKb0F5v2Xz7k4XhoeGonv1g/JOg-7D6g75U.jpg)
-   
+   ***
    + open downloaded folder
  
-   ![alt text](https://sun2.velcom-by-minsk.userapi.com/-IiXZuRQ7XbIPSKzDLP4NWPvleQDBwQKFZJt8w/mELvZOM10Jg.jpg)
+   ![alt text](https://sun2.velcom-by-minsk.userapi.com/ctivpLZ6hdlsoS0yLc8ZaeC_Jjj_VPvKFgjd6w/wVieoB6VVew.jpg)
   
    + install necessary packages
  
