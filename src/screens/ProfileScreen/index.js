@@ -4,8 +4,9 @@ import Rate from 'react-native-rate';
 import firebase from 'react-native-firebase';
 
 import Button from '../../components/Button';
-import { screenWidth } from '../../constants';
 import AuthModal from '../../components/AuthModal';
+import { screenWidth } from '../../constants';
+
 import styles from './styles';
 
 class ProfileScreen extends React.Component {
@@ -54,8 +55,9 @@ class ProfileScreen extends React.Component {
 
   render() {
     const { isShowPicker } = this.state;
+    const { styleImg, container, customContainer, customTitle, customTitleExit } = styles;
     return (
-      <View style={styles.container}>
+      <View style={container}>
         <AuthModal isShowPicker={isShowPicker} togglePicker={this.togglePicker} />
         <ScrollView>
           <Button
@@ -63,28 +65,28 @@ class ProfileScreen extends React.Component {
             icon="md-star"
             iconColor="#D3C755"
             title="Оценить приложение"
-            customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
-            customTitle={{ color: '#4078c0', paddingLeft: 25 }}
+            customContainer={customContainer}
+            customTitle={customTitle}
           />
           <Button
             icon="ios-chatbubbles"
             iconColor="#4E8356"
             title="Обратная связь"
-            customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
-            customTitle={{ color: '#4078c0', paddingLeft: 25 }}
+            customContainer={customContainer}
+            customTitle={customTitle}
             onButtonPress={this.sendEmail}
           />
           <Button
             icon="md-close-circle"
             iconColor="#D24B53"
             title="Выйти"
-            customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
-            customTitle={{ color: '#7B596E', paddingLeft: 25 }}
+            customContainer={customContainer}
+            customTitle={customTitleExit}
             onButtonPress={this.onLogout}
           />
           <Image
             source={require('../../../img/sonileni.png')}
-            style={[styles.styleImg, { height: screenWidth < 350 ? 230 : 215 }]}
+            style={[styleImg, { height: screenWidth < 350 ? 230 : 215 }]}
           />
         </ScrollView>
       </View>

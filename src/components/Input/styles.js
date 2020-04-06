@@ -19,5 +19,11 @@ export default StyleSheet.create({
     width: 25,
     fontSize: 25,
     alignSelf: 'center'
+  },
+  inputStyle: {
+    flex: 1,
+    fontSize: 16,
+    color: '#000',
+    paddingLeft: 25
   }
 });

@@ -4,11 +4,12 @@ import firebase from 'react-native-firebase';
 import DatePicker from 'react-native-datepicker';
 import moment from 'moment';
 
-import { screenWidth } from '../../constants';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import CustomModal from '../../components/CustomModal';
 import SwitchCard from '../../components/SwitchCard';
+import { screenWidth } from '../../constants';
+
 import styles from './styles';
 
 class TaskScreen extends React.Component {
@@ -103,8 +104,17 @@ class TaskScreen extends React.Component {
 
   render() {
     const { isShowPicker, isNotificationEnable, error, note, date } = this.state;
+    const {
+      container,
+      containerDataPicker,
+      styleImg,
+      customTitleText,
+      customTitleSwitch,
+      customContainer,
+      textError
+    } = styles;
     return (
-      <View style={styles.container}>
+      <View style={container}>
         <CustomModal
           isShowPicker={isShowPicker}
           togglePicker={this.togglePicker}
@@ -119,11 +129,11 @@ class TaskScreen extends React.Component {
         <Button
           title={date || 'Дата и время'}
           icon="md-alarm"
-          customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
-          customTitle={{ color: '#4078c0', paddingLeft: 25 }}
+          customContainer={customContainer}
+          customTitle={customTitleText}
         >
           <DatePicker
-            style={styles.containerDataPicker}
+            style={containerDataPicker}
             date={date}
             mode="datetime"
             locale="ru-RU"
@@ -137,18 +147,17 @@ class TaskScreen extends React.Component {
             showIcon={false}
           />
         </Button>
-
         <Button
           title="Категория"
           icon="md-clipboard"
-          customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
-          customTitle={{ color: '#4078c0', paddingLeft: 25 }}
+          customContainer={customContainer}
+          customTitle={customTitleText}
           onButtonPress={this.togglePicker}
         />
         <SwitchCard
           title="Уведомление"
           customContainer={{ height: 40 }}
-          customTitle={{ color: '#4078c0', alignItems: 'center' }}
+          customTitle={customTitleSwitch}
           value={isNotificationEnable}
           onValueChange={this.toggleNotify}
         />
@@ -156,14 +165,14 @@ class TaskScreen extends React.Component {
           onButtonPress={this.createTask}
           title="Сохранить задачу"
           icon="ios-checkmark-circle"
-          customContainer={{ flexDirection: 'row', justifyContent: 'flex-start' }}
-          customTitle={{ color: '#4078c0', paddingLeft: 25 }}
+          customContainer={customContainer}
+          customTitle={customTitleText}
         />
-        <Text style={{ color: '#bd2c00', textAlign: 'center', paddingTop: 5 }}>{error}</Text>
+        <Text style={textError}>{error}</Text>
         <Image
           source={require('../../../img/leni.png')}
           style={[
-            styles.styleImg,
+            styleImg,
             { height: screenWidth < 350 ? 180 : 300, width: screenWidth < 350 ? 180 : 300 }
           ]}
         />

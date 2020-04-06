@@ -25,6 +25,12 @@ export default StyleSheet.create({
     color: '#767C96',
     paddingLeft: 15,
     fontSize: 12,
-    marginTop: 5,
+    marginTop: 5
+  },
+  styleSwitch: {
+    alignSelf: 'center'
+  },
+  containerText: {
+    flexDirection: 'column'
   }
 });

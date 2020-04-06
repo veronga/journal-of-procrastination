@@ -91,7 +91,7 @@ class ComplateScreen extends React.Component {
           agendaDayNumColor: '#ACACB3',
           agendaTodayColor: '#4078c0',
           textSectionTitleColor: '#d9e1e8',
-          todayTextColor: '#E21A1A',
+          todayTextColor: '#bd2c00',
           dayTextColor: '#6762a6',
           selectedDayTextColor: '#fafafa',
           textDisabledColor: '#d9e1e8',

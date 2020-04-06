@@ -2,9 +2,10 @@ import React from 'react';
 import firebase from 'react-native-firebase';
 import { Image, View, Text, TouchableOpacity, LayoutAnimation } from 'react-native';
 
-import { screenWidth } from '../../constants';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import { screenWidth } from '../../constants';
+
 import styles from './styles';
 
 class HomeScreen extends React.Component {
@@ -94,8 +95,18 @@ class HomeScreen extends React.Component {
   };
 
   render() {
-    const { container, styleImg, containerInput } = styles;
     const { emailInput, passwordInput, isRegScreen, error } = this.state;
+    const {
+      container,
+      styleImg,
+      containerInput,
+      textError,
+      containerCustom,
+      containerEntrance,
+      customTitle,
+      textCheckAccount,
+      textCheckRegistrations
+    } = styles;
     return (
       <View style={container}>
         <Image
@@ -118,23 +129,23 @@ class HomeScreen extends React.Component {
         <Button
           onButtonPress={this.onRegButtonPress}
           title={isRegScreen ? ' Зарегистироваться' : 'Войти'}
-          customContainer={{ backgroundColor: '#4078c0', height: 50 }}
-          customTitle={{ color: '#FFF8F2' }}
+          customContainer={containerEntrance}
+          customTitle={customTitle}
         />
         {isRegScreen && (
           <Button
             onButtonPress={this.onSkipButtonPress}
             title="Ну или потом ;)"
-            customContainer={{ backgroundColor: '#6e5494', height: 50 }}
-            customTitle={{ color: '#FFF8F2' }}
+            customContainer={containerCustom}
+            customTitle={customTitle}
           />
         )}
-        <Text style={{ color: '#bd2c00', textAlign: 'center', paddingTop: 5 }}>{error}</Text>
+        <Text style={textError}>{error}</Text>
         <View style={containerInput}>
           <TouchableOpacity onPress={this.toggleScreen}>
-            <Text style={{ color: '#6e5494' }}>
+            <Text style={textCheckAccount}>
               {isRegScreen ? 'У вас уже есть аккаунт?' : 'Нет аккаунта?'}
-              <Text style={{ color: '#4078c0', fontSize: 17 }}>
+              <Text style={textCheckRegistrations}>
                 {isRegScreen ? ' Войти' : ' Зарегистироваться'}
               </Text>
             </Text>

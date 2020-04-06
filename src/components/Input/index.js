@@ -6,19 +6,12 @@ import styles from './styles';
 
 export default function Input(props) {
   const { icon, placeholder, secureTextEntry, customIconStyle, value, onChangeText } = props;
-  const { container, iconStyle } = styles;
-
+  const { container, iconStyle, inputStyle } = styles;
   return (
     <View style={container}>
       <Icon name={icon} style={[iconStyle, customIconStyle]} color="#6e5494" />
-
       <TextInput
-        style={{
-          flex: 1,
-          fontSize: 16,
-          color: '#000',
-          paddingLeft: 25
-        }}
+        style={inputStyle}
         placeholder={placeholder}
         secureTextEntry={secureTextEntry}
         value={value}

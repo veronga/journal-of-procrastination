@@ -2,6 +2,8 @@ import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import firebase from 'react-native-firebase';
 
+import styles from './styles';
+
 export default class AuthLoading extends React.Component {
   constructor(props) {
     super(props);
@@ -17,8 +19,9 @@ export default class AuthLoading extends React.Component {
   };
 
   render() {
+    const { container } = styles;
     return (
-      <View style={{ flex: 1, justifyContent: 'center' }}>
+      <View style={container}>
         <ActivityIndicator size="large" color="#A388CA" />
       </View>
     );

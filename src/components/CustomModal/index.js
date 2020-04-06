@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { View, Modal, ScrollView, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import styles from './styles';
 import CategoryIcon from '../CategoryIcon';
+
+import styles from './styles';
 
 export default class CustomModal extends Component {
   constructor(props) {

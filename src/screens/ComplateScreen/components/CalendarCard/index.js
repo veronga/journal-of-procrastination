@@ -6,9 +6,9 @@ import styles from './styles';
 
 const EventCard = ({ item }) => {
   const { date, icon, title } = item;
-  const { timeStyle, titleStyle, iconStyle } = styles;
+  const { timeStyle, titleStyle, iconStyle, container } = styles;
   return (
-    <View style={[styles.item]}>
+    <View style={container}>
       <View>
         <Text style={titleStyle}>{title}</Text>
         <Text style={timeStyle}>{date}</Text>

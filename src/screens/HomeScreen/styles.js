@@ -15,5 +15,28 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     marginTop: 20
+  },
+  textError: {
+    color: '#bd2c00',
+    textAlign: 'center',
+    paddingTop: 5
+  },
+  containerCustom: {
+    backgroundColor: '#6e5494',
+    height: 50
+  },
+  containerEntrance: {
+    backgroundColor: '#4078c0',
+    height: 50
+  },
+  customTitle: {
+    color: '#FFF8F2'
+  },
+  textCheckAccount: {
+    color: '#6e5494'
+  },
+  textCheckRegistrations: {
+    color: '#4078c0',
+    fontSize: 17
   }
 });

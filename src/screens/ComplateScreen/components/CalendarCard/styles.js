@@ -2,10 +2,6 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: 'white'
-  },
-  item: {
     backgroundColor: '#E3E3EE',
     flex: 1,
     borderRadius: 10,
@@ -23,10 +19,10 @@ export default StyleSheet.create({
   },
   titleStyle: {
     fontSize: 16,
-    color: '#6e5494',
+    color: '#6e5494'
   },
   iconStyle: {
     color: '#4A4C9B',
-    fontSize: 24,
+    fontSize: 24
   }
 });
