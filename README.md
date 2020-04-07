@@ -1,6 +1,6 @@
 ![alt text](https://sun2.velcom-by-minsk.userapi.com/wUcVKAgu2T64e-0qa3B41tOIWXA3Vg8MW6oS2Q/o-tdh66s3a8.jpg)
 
-**JOURNAL OF PROCRASTINATION** 
+# **JOURNAL OF PROCRASTINATION** 
 ***
 Cross platform applications for creating notes and tasks written in the framework React Native
 ***
