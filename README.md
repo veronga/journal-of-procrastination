@@ -4,7 +4,7 @@
 ***
 Cross platform applications for creating notes and tasks written in the framework React Native
 ***
-Use library:
+### Use library:
  + [react](https://github.com/facebook/react/):"16.8.3"
  + [react-native](https://github.com/facebook/react-native#readme):"0.59.3"
  + [moment](https://github.com/moment/moment/):"^2.24.0"
@@ -17,10 +17,12 @@ Use library:
  + [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons):"^6.6.0"
  + [react-navigation](https://github.com/react-navigation/react-navigation#readme): "^3.11.0"
  ***
- How to run
+ ### How to run
    + copy app
+  ```
+  $ git clone https://github.com/veronga/jop
+  ```
   
-   ![alt text](https://sun2.velcom-by-minsk.userapi.com/bxgCQuOY9IGzirPBKb0F5v2Xz7k4XhoeGonv1g/JOg-7D6g75U.jpg)
    ***
    + open downloaded folder
  
