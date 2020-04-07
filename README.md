@@ -22,11 +22,34 @@ Cross platform applications for creating notes and tasks written in the framewor
   ```
   $ git clone https://github.com/veronga/jop
   ```
-  
-   ***
+
    + open downloaded folder
  
-   ![alt text](https://sun2.velcom-by-minsk.userapi.com/ctivpLZ6hdlsoS0yLc8ZaeC_Jjj_VPvKFgjd6w/wVieoB6VVew.jpg)
-  
+  ```
+  $  cd jop
+  ```
+
    + install necessary packages
- 
+  ```
+  $  npm install
+  ```
+  
+   + install PODs
+  ```
+  $  cd ios
+  ```
+  ```
+  $  pod install
+  ```
+  
+   + Now let's launch the app, but don't forget to log out of the ios folder
+   
+  ```
+  $  ..
+  ```
+  ```
+  $  react-native run-[ios|android]
+  ```
+   
+  
+  
