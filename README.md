@@ -50,6 +50,5 @@ Cross platform applications for creating notes and tasks written in the framewor
   ```
   $  react-native run-[ios|android]
   ```
-   
-  
-  
+  ***
+ #### You are in my app, use it :D
