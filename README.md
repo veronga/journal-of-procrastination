@@ -1,6 +1,11 @@
-![alt text](https://sun2.velcom-by-minsk.userapi.com/wUcVKAgu2T64e-0qa3B41tOIWXA3Vg8MW6oS2Q/o-tdh66s3a8.jpg)
+<p align="center">
+  <a href="https://sun2.velcom-by-minsk.userapi.com/wUcVKAgu2T64e-0qa3B41tOIWXA3Vg8MW6oS2Q/o-tdh66s3a8.jpg">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-# **JOURNAL OF PROCRASTINATION** 
+
+ <h3 align="center">JOURNAL OF PROCRASTINATION</h3>
+
 ***
 Cross platform applications for creating notes and tasks written in the framework React Native
 ***
