@@ -1,7 +1,6 @@
 <p align="center">
-  <a href="https://sun2.velcom-by-minsk.userapi.com/wUcVKAgu2T64e-0qa3B41tOIWXA3Vg8MW6oS2Q/o-tdh66s3a8.jpg">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  <img width="250" height="250" src="https://github.com/veronga/game/blob/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
+</p>
 
 
  <h3 align="center">JOURNAL OF PROCRASTINATION</h3>
