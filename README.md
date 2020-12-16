@@ -1,9 +1,9 @@
+<h3 align="center">JOURNAL OF PROCRASTINATION</h3>
 <p align="center">
   <img width="250" height="250" src="https://github.com/veronga/journal-of-procrastination/blob/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
 </p>
 
 
- <h3 align="center">JOURNAL OF PROCRASTINATION</h3>
 
 ***
 Cross platform applications for creating notes and tasks written in the framework React Native
